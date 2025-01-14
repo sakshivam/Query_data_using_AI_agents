@@ -141,6 +141,7 @@ httpx-sse==0.4.0
     # via langchain-community
 huggingface-hub==0.27.1
     # via
+    #   langchain-huggingface
     #   sentence-transformers
     #   tokenizers
     #   transformers
@@ -190,11 +191,14 @@ langchain-core==0.3.29
     #   langchain-community
     #   langchain-experimental
     #   langchain-groq
+    #   langchain-huggingface
     #   langchain-openai
     #   langchain-text-splitters
 langchain-experimental==0.3.4
     # via -r requirements.in
 langchain-groq==0.2.3
+    # via -r requirements.in
+langchain-huggingface==0.1.2
     # via -r requirements.in
 langchain-openai==0.3.0
     # via -r requirements.in
@@ -435,7 +439,9 @@ scipy==1.15.1
     #   scikit-learn
     #   sentence-transformers
 sentence-transformers==3.3.1
-    # via -r requirements.in
+    # via
+    #   -r requirements.in
+    #   langchain-huggingface
 shellingham==1.5.4
     # via typer
 six==1.17.0
@@ -479,6 +485,7 @@ tiktoken==0.8.0
 tokenizers==0.21.0
     # via
     #   chromadb
+    #   langchain-huggingface
     #   transformers
 toml==0.10.2
     # via streamlit
@@ -498,6 +505,7 @@ tqdm==4.67.1
 transformers==4.48.0
     # via
     #   -r requirements.in
+    #   langchain-huggingface
     #   sentence-transformers
 typer==0.15.1
     # via chromadb
